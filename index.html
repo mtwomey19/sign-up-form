@@ -10,53 +10,67 @@
 <body>
     <div class="container">
         <div class="left-side">
-            <img src="./img/surf.jpg" alt="An aerial view of a surfer cutting right as the wave breaks overhead.">
+            <div class="left-side-top">
+                <img class="odin-logo" src="./img/odin-lined.png" alt="The Odin logo">
+                <p>Surf Odin</p>
+            </div>
+            <img class="ocean-img" src="./img/surf.jpg" alt="An aerial view of a surfer cutting right as the wave breaks overhead.">
         </div>
 
         <div class="right-side">
-            <p>
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                Sign up now to get started.
-            </p>
-            <p>You know you want to.</p>
+            <div class="heading">
+                <p class="intro" id="opening">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                </p>
+                <p class="sub-intro">You know you want to.</p>
+            </div>
 
             <form>
-                <legend>Let's do this!</legend>
+                <div class="form-top">
+                    <legend>Let's do this!</legend>
 
-                <div class="form-row-1">
-                    <div class="f-name input-pair">
-                        <label for="f-name">First Name</label>
-                        <input type="text" id="f-name" name="fName">
+                    <div class="form-row-1">
+                        <div class="f-name input-pair">
+                            <label for="f-name">First Name</label>
+                            <input type="text" id="f-name" name="fName">
+                        </div>
+                        <div class="l-name input-pair">
+                            <label for="l-name">Last Name</label>
+                            <input type="text" id="l-name" name="lName">
+                        </div>
                     </div>
-                    <div class="l-name input-pair">
-                        <label for="l-name">Last Name</label>
-                        <input type="text" id="l-name" name="lName">
+
+                    <div class="form-row-2">
+                        <div class="email input-pair">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="phone-num input-pair">
+                            <label for="phone-num">Phone Number</label>
+                            <input type="tel" id="phone-num" name="phoneNum">
+                        </div>
+                    </div>
+
+                    <div class="form-row-3">
+                        <div class="password input-pair">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="confirm-password input-pair">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirmPassword">
+                        </div>
                     </div>
                 </div>
 
-                <div class="form-row-2">
-                    <div class="email input-pair">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="phone-num input-pair">
-                        <label for="phone-num">Phone Number</label>
-                        <input type="tel" id="phone-num" name="phoneNum">
-                    </div>
+                <div class="submit-btn">
+                    <button type=submit>Create Account</button>
                 </div>
-
-                <div class="form-row-3">
-                    <div class="password input-pair">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="confirm-password input-pair">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirmPassword">
-                    </div>
-                </div>
-                
+        
             </form>
+
+            <p class="sub-form">Already have an account? Log in</p>
 
         </div>
     </div>

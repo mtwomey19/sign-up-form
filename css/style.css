@@ -1,3 +1,8 @@
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +13,125 @@
     display: flex;
 }
 
-.left-side img{
-    max-height: 100vh;
+.left-side {
+    position: relative;
+}
+
+.ocean-img {
+    height: 100vh;
+    min-width: 270px;
+    max-width: 30vw;
+}
+
+.left-side-top {
+    position: absolute;
+    top: 195px;;
+    min-width: 100%;
+    height: 120px;
+    background-color: #34495E;
+    opacity: 30%;
+}
+
+.odin-logo {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 33.3%;
+    transform: translate(-50%,-50%);
+}
+
+.left-side-top p {
+    position: absolute;
+    top: 50%;
+    left: 66.6%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+    font-family: regular;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .right-side {
-    padding-left: 50px;
-    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4F6F6;
+    font-family: regular;
+}
+.intro, .sub-intro {
+    font-size: 21px;
+    padding-left: 60px;
+}
+
+.intro {
+     padding-top: 120px;
+     padding-right: 180px;
+     height: 243px;
+     min-width: 780px;
+}
+
+.sub-intro {
+    display: flex;
+    height: 30px;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 42px;
+    padding-bottom: 21px;
+    padding-left: 60px;
+    gap: 21px;
+    background-color: #FDFEFE;
+}
+
+legend {
+    padding-top: 21px;
+    font-size: 21px;
 }
 
 .input-pair {
     display: flex;
     flex-direction: column;
+    width: 240px;
 }
 
 .form-row-1,
 .form-row-2,
 .form-row-3 {
     display: flex;
+    gap: 63px;
+}
+
+input {
+    background-color: #FDFEFE;
+    border: 1.5px solid #D5DBDB;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.submit-btn {
+    background-color: #F4F6F6;
+    padding-top: 21px;
+    padding-left: 60px;
+}
+
+.submit-btn button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    width: 210px;
+    background-color: #16A085;
+    color: #F4F6F6;
+    font-size: 18px;
+    font-family: regular;
+}
+
+.sub-form {
+    padding-top: 21px;
+    padding-left: 60px;
+}
+
+span {
+    font-style: italic;
 }
