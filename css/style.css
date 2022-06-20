@@ -16,3 +16,14 @@
     padding-left: 50px;
     padding-right: 150px;
 }
+
+.input-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row-1,
+.form-row-2,
+.form-row-3 {
+    display: flex;
+}
