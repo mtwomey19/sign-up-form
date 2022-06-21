@@ -42,8 +42,7 @@ function checkPhoneNum(element, errorElement) {
             else {
                 element.style.border = "1px solid #D98880";
                 errorElement.textContent = 'Can you try re-entering your number';
-                submitButton.disabled = true;
-                
+                submitButton.disabled = true;   
             }
     });
 }
@@ -75,7 +74,6 @@ function comparePasswords(element, errorElement) {
             element.style.border = "1px solid #D98880";
             errorElement.textContent = 'The passwords don\'t seem to match';
             submitButton.disabled = true;
-            console.log('hello');
         }
     });
 }
