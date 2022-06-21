@@ -133,6 +133,14 @@ input:focus {
     font-family: regular;
 }
 
+.submit-btn button:hover {
+    box-shadow: 0 0 3px #34495E;
+}
+
+.submit-btn button:active {
+    filter: brightness(1.20);
+}
+
 .sub-form {
     padding-top: 21px;
     padding-left: 60px;
@@ -143,3 +151,6 @@ input:focus {
     font-size: 12px;
 }
 
+#login-link:visited {
+    color: #000000;
+}

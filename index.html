@@ -33,51 +33,51 @@
 
                     <div class="form-row-1">
                         <div class="f-name input-pair">
-                            <label for="f-name">First Name</label>
-                            <input type="text" id="f-name" name="fName">
-                            <p class="error">Sorry</p>
+                            <label for="f-name">First Name*</label>
+                            <input type="text" id="f-name" name="fName" required>
+                            <p class="error" id="fname-error"></p>
                         </div>
                         <div class="l-name input-pair">
-                            <label for="l-name">Last Name</label>
-                            <input type="text" id="l-name" name="lName">
-                            <p class="error">Sorry</p>
+                            <label for="l-name">Last Name*</label>
+                            <input type="text" id="l-name" name="lName" required>
+                            <p class="error" id="lname-error"></p>
                         </div>
                     </div>
 
                     <div class="form-row-2">
                         <div class="email input-pair">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <p class="error">Sorry</p>
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                            <p class="error" id="email-error"></p>
                         </div>
                         <div class="phone-num input-pair">
-                            <label for="phone-num">Phone Number</label>
-                            <input type="tel" id="phone-num" name="phoneNum">
-                            <p class="error">Sorry</p>
+                            <label for="phone-num">Phone Number*</label>
+                            <input type="tel" id="phone-num" name="phoneNum" required>
+                            <p class="error" id="phone-error"></p>
                         </div>
                     </div>
 
                     <div class="form-row-3">
                         <div class="password input-pair">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="password">
-                            <p class="error">Sorry</p>
+                            <label for="password">Password*</label>
+                            <input type="password" id="password" name="password" required>
+                            <p class="error" id="password-error"></p>
                         </div>
                         <div class="confirm-password input-pair">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="confirmPassword">
-                            <p class="error">Sorry</p>
+                            <label for="confirm-password">Confirm Password*</label>
+                            <input type="password" id="confirm-password" name="confirmPassword" required>
+                            <p class="error" id="confirm-password-error"></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="submit-btn">
-                    <button type=submit>Create Account</button>
+                    <button type=submit id="submit-button">Create Account</button>
                 </div>
         
             </form>
 
-            <p class="sub-form">Already have an account? Log in</p>
+            <p class="sub-form">Already have an account? <a id="login-link" href="https://www.google.com">Log in</a></p>
 
         </div>
     </div>
